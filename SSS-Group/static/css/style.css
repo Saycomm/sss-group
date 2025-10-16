@@ -1,0 +1,602 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container h2{
+    margin-bottom: 20px;
+}
+
+.box {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+    .box.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+/* Hero */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg") no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #00bfff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #008fcc;
+}
+
+/* Pricing Table */
+#pricing {
+    padding: 80px 20px;
+    background: #fff;
+  }
+  
+  #pricing h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card.highlight {
+    border: 2px solid #00bfff;
+    background: #e6f7ff;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .card .price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #00bfff;
+  }
+  
+  .card ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .card ul li {
+    margin: 6px 0;
+  }
+  
+  .card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00bfff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .card .btn:hover {
+    background: #008fcc;
+  }
+
+
+/* Advantages */
+#advantages {
+    padding: 60px 20px;
+    background: #f0f8ff;
+}
+
+/* #advantages{
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/banner-adv.jpg") no-repeat center/cover;
+} */
+
+#advantages h2 {
+
+    margin-bottom: 20px;
+}
+
+.adv-list {
+    max-width: 800px;
+    line-height: 1.8;
+    list-style: none;
+}
+
+.adv-list li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 7px;
+}
+
+.adv-list i{
+    color: #008fcc;
+    font-size: 25px;
+}
+
+/* Services */
+#services {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.services-grid .card-1{
+    background:linear-gradient(rgba(255, 255, 255, 0.92)), url("../images/uslug-1.jpg") no-repeat, center;
+    background-size: cover;
+}
+
+.services-grid .card-2{
+    background:linear-gradient(rgba(255, 255, 255, 0.92)), url("../images/uslug-2.jpg") no-repeat, center;
+    background-size: cover;
+}
+
+.services-grid .card h3{
+    margin-bottom: 20px;
+}
+
+.write_wats i{
+    font-size: 22px;
+}
+
+/* Key Benefits */
+#key {
+    padding: 80px 20px;
+}
+
+.features-grid {
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-top: 30px;
+}
+
+.feature {
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 0 10px lightgrey;
+    border-radius: 10px;
+    height: 130px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature i {
+    font-size: 40px;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+/* Steps */
+#start {
+    padding: 80px 20px;
+    background:linear-gradient(rgba(224, 224, 224, 0.5)), url("../images/banner-2.jpg") no-repeat center/cover;
+}
+
+.steps {
+    max-width: 600px;
+    line-height: 1.8;
+    padding-left: 19px;
+}
+
+
+#form-section{
+  padding: 80px 20px;
+  background: linear-gradient(rgb(224 224 224 / 77%)), url(../images/banner-5.jpg) no-repeat center / cover;
+}
+
+.form-container{
+  width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.form-container h2{
+  margin-bottom: 20px;  
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact-form label{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.text-area{
+  max-width: 600px;
+    height: 90px;
+    border: none;
+    border-bottom: 1px solid #03bfff;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.contact-form input{
+  max-width: 600px;
+    border: none;
+    border-bottom: 1px solid #03bfff;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px #dedede;
+    font-size: 16px;
+}
+
+
+.contact-form button{
+  max-width: 300px;
+  height: 40px;
+  background: #00bfff;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 10px;
+  transition: all.3s;
+}
+
+.contact-form button:hover{
+  box-shadow: 0 0 10px #03bfff;
+}
+
+/* Contact */
+#contact {
+    padding: 80px 20px;
+    background: #00bfff;
+    color: #fff;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Contact */
+#contact{
+    background: #242424;
+}
+
+.logo-footers{
+    display: flex;
+    align-items: center;
+
+}
+
+#contact .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-footers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-footers h1{
+    font-size: 30px;
+}
+
+.logo-footers .line{
+    width: 2px;
+    height: 100px;
+    border: 1px solid grey;
+}
+
+.footer-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #6b6b6b;
+}
+
+.menu-texts ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-texts ul li a{
+    color: #6b6b6b;
+    transition: all.3s;
+}
+
+.menu-texts ul li a:hover{
+  color: #e6f7ff;
+}
+
+.links-for-phone{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #6b6b6b;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+}
+
+.icons i{
+    font-size: 22px;
+    transition: all.3s;
+    color: #6b6b6b;
+}
+
+.icons i:hover{
+  color: #e6f7ff;
+  cursor: pointer;
+}
+
+.links-for-phone .support{
+    margin: 0;
+}
+
+.footer-texts-mobil{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Mobil uchun moslashtirish */
+@media (max-width: 768px) {
+  /* Header */
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  /* Hero */
+  #hero {
+    padding: 80px 20px;
+  }
+
+  #hero h2 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  /* Pricing cards */
+  .pricing-grid {
+    grid-template-columns: 1fr; /* Har safar bitta ustun */
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card .price {
+    font-size: 18px;
+  }
+
+  /* Features (icons) */
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Steps */
+  .steps {
+    padding-left: 20px;
+  }
+
+  #contact{
+    padding: 37px 20px;
+  }
+
+  #contact .container{
+    gap: 15px;
+  }
+  
+  .logo-footers .line{
+    display: none;
+  }
+
+  .footer{
+    display: none;
+  }
+
+  .footer-texts-mobil{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #6b6b6b;
+    border-top: 1px solid #e6f7ff;
+    background: #242424;
+    padding: 10px 0;
+  }
+
+  #form-section{
+    padding: 80px 20px;
+    background: linear-gradient(rgb(224 224 224 / 77%)), url(../images/banner-5-1.jpg) no-repeat center / cover;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Telefon uchun */
+  header {
+    padding: 10px 0;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  #hero h2 {
+    font-size: 24px;
+  }
+
+  #contact{
+    padding: 40px 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .menu-texts ul{
+    flex-direction: column;
+  }
+
+  .links-for-phone{
+    margin-top: 50px;
+  }
+
+  .logo-footers{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #contact .container{
+    align-items: flex-end;
+  }
+}

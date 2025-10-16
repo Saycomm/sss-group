@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SSS Group — автоматизация учета для бизнеса. Тарифы, услуги, преимущества, поддержка и индивидуальные решения.">
+  <title>SSS Group — Автоматизация учета</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+      <h1 class="logo">SSS Group</h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#pricing">Тарифы</a></li>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#start">Как начать</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container hero-content animate fade-up">
+      <h2>Автоматизированная система учёта</h2>
+      <p>Ваш бизнес заслуживает профессиональных решений!</p>
+      <a href="#pricing" class="btn">Выбрать тариф</a>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="container">
+      <h2 class="animate fade-up">Тарифы</h2>
+      <div class="pricing-grid">
+        <div class="card animate fade-up">
+          <h3>Минимальный</h3>
+          <p class="price">25 000 ₸/мес</p>
+          <ul>
+            <li>Полугодовая оплата: 125 000 ₸ <br><small>Экономия 25 000 ₸</small></li>
+            <li>Годовая оплата: 240 000 ₸ <br><small>Экономия 60 000 ₸</small></li>
+            <li>Покупка системы: 3 000 000 ₸</li>
+            <li>Для кого: кофейни, небольшие магазины</li>
+            <li>Техподдержка: Базовая</li>
+          </ul>
+          <a href="#form-section" class="btn">Выбрать тариф</a>
+        </div>
+  
+        <div class="card highlight animate fade-up">
+          <h3>Стандарт</h3>
+          <p class="price">30 000 ₸/мес</p>
+          <ul>
+            <li>Полугодовая оплата: 150 000 ₸ <br><small>Экономия 30 000 ₸</small></li>
+            <li>Годовая оплата: 290 000 ₸ <br><small>Экономия 70 000 ₸</small></li>
+            <li>Покупка системы: 3 000 000 ₸</li>
+            <li>Для кого: розничные точки с несколькими магазинами</li>
+            <li>Техподдержка: В будние дни</li>
+          </ul>
+          <a href="#form-section" class="btn">Выбрать тариф</a>
+        </div>
+  
+        <div class="card animate fade-up">
+          <h3>Премиум</h3>
+          <p class="price">35 000 ₸/мес</p>
+          <ul>
+            <li>Полугодовая оплата: 175 000 ₸ <br><small>Экономия 35 000 ₸</small></li>
+            <li>Годовая оплата: 330 000 ₸ <br><small>Экономия 90 000 ₸</small></li>
+            <li>Покупка системы: 3 000 000 ₸</li>
+            <li>Для кого: растущий бизнес, сети</li>
+            <li>Техподдержка: Приоритетная</li>
+          </ul>
+          <a href="#form-section" class="btn">Выбрать тариф</a>
+        </div>
+  
+        <div class="card animate fade-up">
+          <h3>Индивидуальный</h3>
+          <p class="price">Договорная</p>
+          <ul>
+            <li>Покупка системы: 3 000 000 ₸</li>
+            <li>Для кого: специфичные бизнес-процессы</li>
+            <li>Техподдержка: Персональная 24/7</li>
+            <li>Интеграции: по запросу</li>
+            <li>Кастомизация: доступна</li>
+          </ul>
+          <a href="#form-section" class="btn">Заказать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section id="advantages">
+    <div class="container">
+      <h2>Преимущества пакетной оплаты</h2>
+      <ul class="adv-list">
+        <li><i class='bx bxs-check-square'></i> <p>Максимальная экономия — до 90 000 ₸ при годовом платеже</p></li>
+        <li><i class='bx bxs-check-square'></i> <p>Фиксированная цена — защита от повышения тарифов</p></li>
+        <li><i class='bx bxs-check-square'></i> <p>Бесплатное обучение — стоимостью 25 000 ₸ в подарок</p></li>
+        <li><i class='bx bxs-check-square'></i> <p>Бесплатная миграция данных — для тарифов Стандарт и Премиум</p></li>
+        <li><i class='bx bxs-check-square'></i> <p>Приоритетная поддержка — быстрое решение вопросов</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <h2>Дополнительные услуги</h2>
+      <div class="services-grid">
+        <div class="card card-1">
+          <h3>Миграция данных из Excel</h3>
+          <ul>
+            <li>до 500 строк — 50 000 ₸</li>
+            <li>500–1000 строк — 70 000 ₸</li>
+            <li>1000–3000 строк — 100 000 ₸</li>
+            <li>3000+ строк — Договорная</li>
+          </ul>
+        </div>
+        <div class="card card-2">
+          <h3>Профессиональные услуги</h3>
+          <ul>
+            <li>Почасовая оплата — от 10 000 ₸/час</li>
+            <li>Индивидуальное обучение — 25 000 ₸/час</li>
+            <li>Кастомизация системы — от 75 000 ₸</li>
+            <li>Приоритетная поддержка — 15 000 ₸/час</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- HOW TO START -->
+    <section id="start">
+      <div class="container">
+        <h2 class="animate fade-up">Как начать работу</h2>
+        <ol class="steps">
+          <li class="animate fade-up" style="animation-delay:0.1s">Выберите тариф</li>
+          <li class="animate fade-up" style="animation-delay:0.2s">Подключите тестовый период</li>
+          <li class="animate fade-up" style="animation-delay:0.3s">Закажите дополнительные услуги</li>
+          <li class="animate fade-up" style="animation-delay:0.4s">Настройте систему</li>
+          <li class="animate fade-up" style="animation-delay:0.5s">Обучите команду</li>
+        </ol>
+      </div>
+    </section>
+
+  <!-- KEY BENEFITS -->
+  <section id="key">
+    <div class="container">
+      <h2 class="animate fade-up">Ключевые преимущества SSS Group</h2>
+      <div class="features-grid">
+        <div class="feature animate zoom"><i class="fa-solid fa-bolt"></i><p>Простота использования</p></div>
+        <div class="feature animate zoom"><i class="fa-solid fa-gear"></i><p>Автоматизация рутины</p></div>
+        <div class="feature animate zoom"><i class="fa-solid fa-shield"></i><p>Безопасность данных</p></div>
+        <div class="feature animate zoom"><i class="fa-solid fa-chart-line"></i><p>Масштабируемость</p></div>
+        <div class="feature animate zoom"><i class="fa-solid fa-headset"></i><p>Профессиональная поддержка</p></div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- CONTACT FORM (before footer) -->
+    <section id="form-section">
+      <div class="form-container">
+        <h2>Свяжитесь с нами</h2>
+        <form class="contact-form">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+  
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+  
+          <label for="message">Сообщение:</label>
+          <textarea id="message" class="text-area" name="message" placeholder="Опишите ваш вопрос" rows="5"></textarea>
+
+
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container animate fade-up">
+        <div class="logo-footers">
+            <h1>SSS Group</h1>
+            <div class="line"></div>
+            <div class="footer-texts">
+                <div class="menu-texts">
+                    <ul>
+                        <li><a href="#hero">Главная</a></li>
+                        <li><a href="#pricing">Тарифы</a></li>
+                        <li><a href="#advantages">Преимущества</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#start">Как начать</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-texts footer">© 2025 SSS Group. Все права защищены.</div>
+            </div>
+        </div>
+        <div class="links-for-phone">
+            <div class="icons">
+                <a href="https://wa.me/+7 702 155 7436"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="tel:+7 702 155 7436"></a><i class='bx bxs-phone'></i>
+            </div>
+            <p class="support">sssgroup@gmail.com</p>
+        </div>
+    </div>
+  </section>
+  <div class="footer-texts-mobil">© 2025 SSS Group. Все права защищены.</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
